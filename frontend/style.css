@@ -1,0 +1,159 @@
+body {
+  background-color: #fafafa;
+}
+
+/*! Header Css Start */
+.navbar {
+  border-bottom: 2px solid #c0b283;
+}
+
+.bg-body-tertiary {
+  background-color: #2c3e50 !important;
+}
+
+.headerTexts:hover {
+  color: #c0b283 !important;
+}
+.nav-item > .active {
+  color: #c0b283 !important;
+}
+/*! Header Css End */
+
+/*! Veresiye Giris Css Start */
+.VeresiyeGiris > form {
+  padding: 2rem 4rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  color: #c0c0c0;
+  box-shadow: 5px 5px 5px #c0b283;
+  height: 40rem;
+}
+.VeresiyeGiris > form > input,
+.customerNameWrapper > input {
+  width: 40rem;
+  background-color: #f5f5f5;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+}
+.VeresiyeGiris > form > input:focus,
+.customerNameWrapper > input:focus {
+  outline: none;
+}
+.VeresiyeGiris > form > button {
+  background-color: #f5f5f5;
+  border: 2px solid transparent;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+.VeresiyeGiris > form > button:hover {
+  border-color: #fafafa;
+  background-color: #c0b283;
+}
+
+.dropdownCustomerName {
+  width: 100%;
+}
+.dropdownCustomerName > button {
+  width: 100%;
+  text-align: start;
+  font-size: 1.2rem;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1rem;
+}
+.dropdownCustomerName > button::after {
+  float: right;
+  margin-top: 0.8rem;
+}
+.dropdownCustomerName > .dropdown-menu {
+  width: 100%;
+}
+.dropdown-menuCustomerNameContent {
+  height: 10rem;
+  overflow-y: auto;
+}
+
+.dropdown-menuCustomerNameContent::-webkit-scrollbar {
+  width: 1rem;
+}
+.dropdown-menuCustomerNameContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.dropdown-menuCustomerNameContent::-webkit-scrollbar-thumb {
+  background-color: #c0b283; /* Scrollbar rengi */
+  border-radius: 1rem; /* Scrollbar yuvarlatma */
+  border: 3px solid #f1f1f1; /* Thumb'ın etrafında boşluk bırakan bir border */
+}
+.dropdown-menuCustomerNameContent::-webkit-scrollbar-thumb:hover {
+  background-color: #a89172; /* Hover'dayken değişen renk */
+}
+.dropdown-menuCustomerNameContent > .customerNameSpan {
+  cursor: pointer;
+  display: block;
+  width: 100% !important;
+  border-bottom: 1px solid #c0b283;
+  font-size: 1.1rem;
+}
+.dropdown-menuCustomerNameContent > .customerNameSpan:hover {
+  background-color: #c0b283;
+}
+.customerUsernameSearchInput {
+  font-size: 1.1rem;
+  padding: 0.1rem;
+}
+.customerUsernameSearchInput:focus {
+  outline-color: #c0b283;
+}
+.creditInputForm > textarea {
+  width: 100%;
+  min-height: 7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+}
+.creditInputForm > textarea:focus {
+  outline-color: #c0b283;
+}
+.creditInputForm > textarea::-webkit-scrollbar {
+  width: 1rem;
+}
+.creditInputForm > textarea::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.creditInputForm > textarea::-webkit-scrollbar-thumb {
+  background-color: #c0b283; /* Scrollbar rengi */
+  border-radius: 1rem; /* Scrollbar yuvarlatma */
+  border: 3px solid #f1f1f1; /* Thumb'ın etrafında boşluk bırakan bir border */
+}
+.creditInputForm > textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #a89172;
+}
+/*! Veresiye Giris Css End*/
+
+/*! Register User Css Start*/
+.addCustomerBtn {
+  height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+.addCustomerBtn > i {
+  font-size: 2rem;
+  color: #a89172;
+}
+.addCustomerBtn > i:hover {
+  color: #c0b283;
+}
+.registerNewCustomerInput {
+  font-size: 1.1rem;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #2c3e50;
+  border-radius: 0.7rem;
+}
+.registerNewCustomerInput:focus {
+  outline-color: #a89172;
+}
+/*! Register User Css End*/
