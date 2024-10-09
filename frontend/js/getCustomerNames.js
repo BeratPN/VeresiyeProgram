@@ -27,7 +27,11 @@ window.addEventListener("load", function () {
         span.textContent = item;
         span.className = "px-2 customerNameSpan";
         span.onclick = function () {
+          const hiddenInput =
+            document.getElementById("customerDropdownHiddenInput") || null;
+
           const customerTextName = this.textContent;
+          hiddenInput ? (hiddenInput.value = customerTextName) : null;
           document.getElementById("customerDropdownBtn").textContent =
             customerTextName;
           document.getElementById("customerDropdownBtn").value =

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veresiye Giriş</title>
+    <!--! bootstrap CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--! bootstrap icon CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--! Custom css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--! Header Start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand fw-semibold text-white headerTexts"
+          href="./AnaSayfa.html"
+          >Anasayfa</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-white headerTexts"
+                aria-current="page"
+                href="./VeresiyeGiris.html"
+                >Veresiye Giriş</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-semibold text-white headerTexts"
+                href="./VeresiyeKontrol.html"
+                >Veresiye Kontrol</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-white headerTexts" href="#"
+                >Veresiye Döküm</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--! Header End-->
+
+    <!--! Body Start-->
+    <div class="container-fluid">
+      <div
+        class="VeresiyeKontrolWrapper d-flex flex-column justify-content-between gap-5"
+      >
+        <div class="dropdown dropdownCustomerName">
+          <button
+            class="dropdown-toggle text-center control"
+            type="button"
+            id="customerDropdownBtn"
+            aria-placeholder="sa"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Müşteri Seçiniz
+          </button>
+
+          <input
+            class="d-none"
+            type="text"
+            name=""
+            id="customerDropdownHiddenInput"
+          />
+
+          <button
+            class="mt-3 getCustomerInfoBtn d-flex text-center align-items-center justify-content-center"
+            id="getCustomerInformationBtn"
+          >
+            Müşteriyi Getir
+          </button>
+
+          <ul class="dropdown-menu" id="dropdown-menuCustomerName">
+            <li class="px-2 d-flex">
+              <input
+                class="w-100 px-1 mb-1 customerUsernameSearchInput"
+                placeholder="Müşteri İsmi Aratın"
+                type="text"
+                name="addCustomerBtn"
+                id="customerNameInput"
+              />
+            </li>
+            <div
+              class="w-100 dropdown-menuCustomerNameContent"
+              id="dropdown-menuCustomerNameContent"
+            ></div>
+          </ul>
+        </div>
+
+        <!--? Credit Content Start -->
+        <table>
+          <thead class="">
+            <th scope="col">#</th>
+            <th scope="col">Müşteri Adı</th>
+            <th scope="col">Tür</th>
+            <th scope="col">Tarih</th>
+            <th scope="col">Fiyat</th>
+            <th scope="col">Yorum</th>
+            <th scope="col">İşlem</th>
+          </thead>
+          <tbody id="ControlContent">
+            <tr>
+              <th scope="row">1</th>
+              <td>Berat</td>
+              <td>Veresiye</td>
+              <td>16/07/2027</td>
+              <td>255.65</td>
+              <td>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Inventore voluptatem dolor iste? Illo totam dolorem molestiae
+                saepe tempore neque fugiat recusandae nihil voluptate facere
+                odio accusantium, ipsa ipsam sunt quasi sit. Voluptatibus,
+                minima? Iusto a nisi magni, unde veritatis et voluptatem
+                doloremque delectus asperiores neque. Dicta animi necessitatibus
+                minima neque labore mollitia atque suscipit explicabo saepe. Quo
+                consectetur doloribus dolorum incidunt deserunt alias iusto a
+                atque debitis ab minus vel, explicabo qui laudantium facilis
+                illo iure accusantium, odio doloremque nesciunt soluta tenetur
+                iste, ut facere? Expedita perferendis nihil consequatur ex,
+                mollitia quibusdam dignissimos pariatur, natus molestias harum
+                aperiam! Ea ut, libero odit facilis rerum voluptatibus.
+                Recusandae nihil veniam, laborum, vitae eaque beatae consectetur
+                aspernatur est, eos maxime quae minima vel saepe ex. Impedit,
+                laudantium aperiam? Ducimus, quidem quis? Tempora eligendi
+                necessitatibus labore repudiandae dolores rem architecto
+                excepturi quam error nemo, quaerat delectus voluptas inventore
+                corporis sint voluptatibus cupiditate repellendus veritatis.
+                Asperiores exercitationem iste quos, laboriosam est eius omnis
+                earum molestias sint officia, voluptate dignissimos qui itaque
+                eos veniam quaerat quas cumque sequi tempora eaque? Obcaecati,
+                perspiciatis qui reiciendis commodi magni quod molestias
+                asperiores aut et aspernatur dicta nobis beatae tenetur,
+                repellendus quidem explicabo, facere sequi omnis! Consequatur
+                inventore doloremque libero.
+              </td>
+              <td>
+                <i class="bi bi-pen-fill"></i>
+                <i class="bi bi-x-circle"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Berat</td>
+              <td>Veresiye</td>
+              <td>16/07/2027</td>
+              <td>255.65</td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                officiis?
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--? Credit Content End -->
+
+        <!--? Pagination Start -->
+        <nav aria-label="Page navigation example  ">
+          <ul class="pagination align-items-center justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+        <!--? Pagination Start -->
+      </div>
+    </div>
+
+    <!--! Body End-->
+
+    <!--! Bootstrap Js CDN-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--? Get Customer Info JS -->
+    <script src="js/getCustomerInfo.js"></script>
+
+    <!--? Search Username JS -->
+    <script src="js/searchCustomerName.js"></script>
+
+    <!--? Get All Customers-->
+    <script src="js/getCustomerNames.js"></script>
+
+    <!--! Sweet Alert Js-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

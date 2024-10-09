@@ -34,14 +34,27 @@ setInterval(async () => {
   await checkNetworkStatus();
 }, 10000);
 
+app.post("/getSingleCustomer", async (req, res) => {
+  const { word } = req.body;
+  const upperWord = word.toUpperCase();
+
+  const uniqueCustomerNames = [
+    ...new Set(
+      data
+        .filter((item) => item.customerName.toUpperCase() === upperWord)
+        .map((item) => item)
+    ),
+  ];
+
+  res.status(200).json(uniqueCustomerNames);
+});
+
 //! Find CustomerName
 app.post("/findCustomerName", async (req, res) => {
   const { word } = req.body;
 
-  // word'ü büyük harfe dönüştür
   const upperWord = word.toUpperCase();
 
-  // Müşteri isimleri içinde word ile eşleşenleri bul
   const uniqueCustomerNames = [
     ...new Set(
       data
@@ -50,7 +63,6 @@ app.post("/findCustomerName", async (req, res) => {
     ),
   ];
 
-  // Sonuçları json olarak döndür
   res.status(200).json(uniqueCustomerNames);
 });
 

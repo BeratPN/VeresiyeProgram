@@ -67,6 +67,9 @@ body {
   float: right;
   margin-top: 0.8rem;
 }
+.dropdownCustomerName > .control::after {
+  margin-top: 0rem;
+}
 .dropdownCustomerName > .dropdown-menu {
   width: 100%;
 }
@@ -157,3 +160,79 @@ body {
   outline-color: #a89172;
 }
 /*! Register User Css End*/
+
+/*! VeresiyeKontrol Css Start */
+.VeresiyeKontrolWrapper {
+  padding: 2rem 5rem;
+}
+.VeresiyeKontrolWrapper > .dropdown > button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  color: #2c3e50;
+  border: 1px solid #c0b283;
+  font-size: 1.1rem;
+}
+.VeresiyeKontrolWrapper > .dropdown > .dropdown-menu {
+  width: 100%;
+  font-size: 1.1rem;
+  border: 1px solid #c0b283;
+  --bs-dropdown-link-hover-bg: #c0b283;
+}
+.VeresiyeKontrolWrapper > .dropdown > .dropdown-menu > .content {
+  height: 10rem;
+  overflow-y: auto;
+}
+.VeresiyeKontrolWrapper
+  > .dropdown
+  > .dropdown-menu
+  > .content::-webkit-scrollbar {
+  width: 1rem;
+}
+.VeresiyeKontrolWrapper
+  > .dropdown
+  > .dropdown-menu
+  > .content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.VeresiyeKontrolWrapper
+  > .dropdown
+  > .dropdown-menu
+  > .content::-webkit-scrollbar-thumb {
+  background-color: #c0b283; /* Scrollbar rengi */
+  border-radius: 1rem; /* Scrollbar yuvarlatma */
+  border: 3px solid #f1f1f1; /* Thumb'ın etrafında boşluk bırakan bir border */
+}
+.VeresiyeKontrolWrapper
+  > .dropdown
+  > .dropdown-menu
+  > .content::-webkit-scrollbar-thumb:hover {
+  background-color: #a89172; /* Hover'dayken değişen renk */
+}
+
+.VeresiyeKontrolWrapper > .dropdown > .dropdown-menu > .content > li {
+  border-bottom: 1px solid #c0b283;
+}
+.VeresiyeKontrolWrapper > table {
+  border: 1px solid #c0b283;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.getCustomerInfoBtn:hover {
+  background-color: #c0b283 !important;
+  border: 1px solid #2c3e50 !important;
+}
+
+#ControlContent > tr > td {
+  max-width: 20rem;
+}
+#ControlContent > tr {
+  margin: 1rem 10rem;
+}
+#ControlContent > tr:hover {
+  background-color: #c0b283;
+}
+
+/*! VeresiyeKontrol Css End */
